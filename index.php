@@ -85,6 +85,7 @@ $stmt->close();
         <div class="header-top">
             <div class="user-info">
                 Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?> 
+                | <a href="edit_profile.php">Edit Profile</a>
                 <?php if ($user['is_admin']): ?>
                     | <a href="admin/manage_products.php">Manage Products</a>
                 <?php endif; ?>
